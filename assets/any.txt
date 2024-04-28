@@ -1,0 +1,1 @@
+Put any asset in this folder to be copied when the module is added to a project.

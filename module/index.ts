@@ -1,12 +1,13 @@
 import {defineTiniModule} from '@tinijs/project';
 
-export interface MyModuleOptions {
+export type MyModuleOptions = {
   foo?: string;
-}
+};
 
-export default defineTiniModule({
+export default defineTiniModule<MyModuleOptions>({
   meta: {
     name: 'my-module',
+    url: 'https://tinijs.dev/module', // optional usage url
   },
   init(tiniConfig) {
     return {
